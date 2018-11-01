@@ -1,0 +1,63 @@
+body {
+    background-color: black;
+    margin: 0;
+}
+.title {
+    background-color: rgb(85, 129, 212);
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+.title p {
+    font-family: arial;
+    font-size: 30px;
+    margin: 0;
+}
+.title h1 {
+    font-family: arial;
+    font-size: 40px;
+    font-weight: normal;
+    margin: 0;
+}
+.instruction-bar {
+    background-color: white;
+    text-align: center;
+}
+.instruction-bar * {
+    font-size: 1.0em;     /* 1em = 16px (default font size for browsers) */
+    font-weight: 600;
+    padding: 4px 8px;
+}
+.instruction-bar > * {
+    margin: 0 5%;
+}
+.difficulty * {
+    margin: 0 5px;
+}
+.instruction-bar button {
+    border: none;
+    color: rgb(85, 129, 212);
+}
+button:focus {
+    outline: none;
+}
+.instruction-bar .clicked {
+    background-color: rgb(85, 129, 212);
+    color: white;
+}
+.squares-grid {
+    display: grid;
+    grid-template-columns: 150px 150px 150px;
+    grid-template-rows: 150px 150px;
+    justify-content: center;
+    margin-top: 20px;
+}
+.squares {
+    background-color: red;
+    border-radius: 20px;
+    margin: 10px;
+    
+}
+.transparent {
+    background-color: transparent !important;
+}
