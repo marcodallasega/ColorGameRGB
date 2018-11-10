@@ -26,24 +26,23 @@ body {
 .instruction-bar * {
     font-size: 1.0em;     /* 1em = 16px (default font size for browsers) */
     font-weight: 600;
+    margin: 0 5%;
     padding: 4px 8px;
 }
-.instruction-bar > * {
-    margin: 0 5%;
-}
 .difficulty * {
-    margin: 0 5px;
+    margin: 0 ;
 }
-.instruction-bar button {
+button {
     border: none;
     color: rgb(85, 129, 212);
 }
 button:focus {
     outline: none;
 }
-.instruction-bar .clicked {
+.clicked, button:hover {
     background-color: rgb(85, 129, 212);
     color: white;
+    transition: 0.5s;
 }
 .squares-grid {
     display: grid;
@@ -56,8 +55,8 @@ button:focus {
     background-color: red;
     border-radius: 20px;
     margin: 10px;
-    
 }
 .transparent {
     background-color: transparent !important;
+    transition: 0.5s;
 }
